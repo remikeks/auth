@@ -4,7 +4,7 @@ Python
 
 Virtual Environment
 
-.venv/ env/ venv/
+.venv/ env/ venv/ venv.bak/ env.bak/ ENV/
 
 Django stuff
 
