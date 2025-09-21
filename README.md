@@ -1,37 +1,36 @@
 # Django Authentication API
 
 This project is a Django-based authentication system that provides both
-a traditional Django UI for login/register as well as REST API endpoints
-(via Django REST Framework) for modern frontend or mobile applications.
+a traditional Django UI as well as REST API endpoints
+(via Django REST Framework) for modern web or mobile applications.
 
 ## Features
 
 -   User registration, login, password reset, and logout (via UI and API).
 -   JWT (JSON Web Token) authentication for secure stateless API access.
--   Environment-based configuration (using `.env` for secrets).
--   Clean separation of UI (`accounts` app) and API (`accounts_api`
+-   Separation of UI (`accounts` app) and API (`accounts_api`
     app).
 
 ## Tech Stack
 
 -   **Backend**: Django, Django REST Framework (DRF)
 -   **Authentication**: JWT (via `djangorestframework-simplejwt`)
--   **Database**: SQLite (default, easy setup) but supports
-    PostgreSQL/MySQL in production
--   **Environment Variables**: `python-decouple` or `django-environ`
+-   **Database**: SQLite (default) but supports
+    alternatives in production
 -   **Version Control**: Git + GitHub
 
 ## Project Structure
 
     project_root/
     │── accounts/          # Traditional Django authentication app (UI)
-    │── accounts_api/      # DRF-powered authentication endpoints
+    │── accounts_api/      # DRF authentication endpoints
     │── authproject/       # Project settings & URLs
     │── templates/         # HTML templates for UI
     │── .env               # Environment variables (SECRET_KEY, DEBUG, etc.)
     │── .gitignore         # Git ignore file
     │── manage.py
     │── README.md
+    │── requirements.txt
 
 ## API Endpoints
 
