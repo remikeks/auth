@@ -1,0 +1,10 @@
+{% extends "base.html" %}
+{% block title %}Home{% endblock %}
+{% block content %}
+  <h1>Welcome</h1>
+  {% if user.is_authenticated %}
+    <p>Hello, {{ user.get_username }}. This is a Digital Dreams Backend Assessment. </p>
+  {% else %}
+    <p>You are not logged in.</p>
+  {% endif %}
+{% endblock %}
