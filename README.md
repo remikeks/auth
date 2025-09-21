@@ -1,4 +1,4 @@
-# Django Authentication API
+# Authentication
 
 This project is a Django-based authentication system that provides both
 a traditional Django UI as well as REST API endpoints
